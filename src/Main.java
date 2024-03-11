@@ -46,10 +46,12 @@ public class Main{
         	
         	if (choice == 'Y') {
         		InsuredPackage insuredPackage = new InsuredPackage(weight, method);
-            	System.out.println("\nInsured Package: "+ insuredPackage.display());
+                System.out.println("\nPackage Type\t\tWeight\tShipping Method\tShipping Cost");
+            	System.out.println("Insured Package "+ insuredPackage.display());
         	} else if (choice == 'N') {
         		Package newPackage = new Package(weight, method);
-            	System.out.println("\nPackage: "+ newPackage.display());
+                System.out.println("\nPackage Type\t\tWeight\tShipping Method\tShipping Cost");
+            	System.out.println("Normal Package  "+ newPackage.display());
         	}
     	} else {
     		System.out.println("Command does not exist. Try again.");
