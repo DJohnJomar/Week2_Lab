@@ -63,11 +63,11 @@ public class Package {
     public String display() {
         String string = "";
         if (shippingMethod == 'A') {
-            string ="\t"+this.weight+"\tAir\t\t"+decimalFormat.format(shippingCost);
+            string ="\t"+this.weight+"\t\tAir\t\t\t"+decimalFormat.format(shippingCost);
         } else if (shippingMethod == 'T') {
-            string ="\t"+this.weight+"\tTruck\t\t"+decimalFormat.format(shippingCost);
+            string ="\t"+this.weight+"\t\tTruck\t\t\t"+decimalFormat.format(shippingCost);
         } else if (shippingMethod == 'M') {
-            string ="\t"+this.weight+"\tMail\t\t"+decimalFormat.format(shippingCost);
+            string ="\t"+this.weight+"\t\tMail\t\t\t"+decimalFormat.format(shippingCost);
         }
         return string;
     }
