@@ -57,31 +57,17 @@ public class Package {
         }
         return shippingCost;
     }
-    //Old display method (May be used later)
-    // public String display(){
-    // String string = "";
-    // if(shippingMethod == 'A'){
-    // string = "Weight: "+this.weight+" ounces\nShipping Method: Air\nShipping
-    // Cost: "+format.format(shippingCost);
-    // }else if(shippingMethod == 'T'){
-    // string = "Weight: "+this.weight+" ounces\nShipping Method: Truck\nShipping
-    // Cost: "+format.format(shippingCost);
-    // }else if(shippingMethod == 'M'){
-    // string = "Weight: "+this.weight+" ounces\nShipping Method: Mail\nShipping
-    // Cost: "+format.format(shippingCost);
-    // }
-    // return string;
-    // }
+
 
     //Displays the weight, shipping method, and shipping cost in a specific layout for readable display in console.
     public String display() {
         String string = "";
         if (shippingMethod == 'A') {
-            string ="\t\t"+this.weight+"\tAir\t\t"+decimalFormat.format(shippingCost);
+            string ="\t"+this.weight+"\tAir\t\t"+decimalFormat.format(shippingCost);
         } else if (shippingMethod == 'T') {
-            string ="\t\t"+this.weight+"\tTruck\t\t"+decimalFormat.format(shippingCost);
+            string ="\t"+this.weight+"\tTruck\t\t"+decimalFormat.format(shippingCost);
         } else if (shippingMethod == 'M') {
-            string ="\t\t"+this.weight+"\tMail\t\t"+decimalFormat.format(shippingCost);
+            string ="\t"+this.weight+"\tMail\t\t"+decimalFormat.format(shippingCost);
         }
         return string;
     }
